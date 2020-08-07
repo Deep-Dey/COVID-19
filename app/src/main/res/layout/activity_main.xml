@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COVID-19"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/download" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you feeling sick?"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/colorText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you feel sick with any of covid-19 symptoms please call your State Helpline/Ministry of Health and Family Welfare's 24X7 helpline at 1075 or 011-23978046."
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:padding="2dp"
+            android:textColor="@color/colorText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Click to view Statewise status of INDIA"
+        android:textSize="30sp"
+        android:textColor="@color/colorText"
+        android:onClick="showIndia"
+        android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>
